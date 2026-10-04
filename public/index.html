@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chat AI OM</title>
+<meta name="theme-color" content="#10a37f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Chat AI OM">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/icon-192.png">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<section id="login" hidden>
+  <div class="card">
+    <div class="logo big">AI</div>
+    <h1>Chat AI OM</h1>
+    <p>سجّل الدخول بحساب Google لتبدأ المحادثة وتحفظ محادثاتك.</p>
+    <div id="gbtn"></div>
+    <p class="err" id="lerr"></p>
+  </div>
+</section>
+
+<section id="appview" hidden>
+  <aside id="side">
+    <button class="primary" id="new">+ محادثة جديدة</button>
+    <nav id="list"></nav>
+    <div class="foot">
+      <button class="ghost" id="install" hidden>تثبيت التطبيق</button>
+      <div class="me"><img id="pic" alt="" referrerpolicy="no-referrer"><span id="uname"></span></div>
+      <button class="ghost" id="logout">تسجيل الخروج</button>
+    </div>
+  </aside>
+  <div id="scrim"></div>
+  <main>
+    <header><button class="ghost" id="menu" aria-label="القائمة">☰</button><b>Chat AI OM</b></header>
+    <div id="chat"></div>
+    <form id="f">
+      <textarea id="in" rows="1" placeholder="اكتب رسالتك..."></textarea>
+      <button id="send" type="submit">إرسال</button>
+    </form>
+  </main>
+</section>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="/app.js"></script>
+</body>
+</html>
