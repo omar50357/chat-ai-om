@@ -44,6 +44,21 @@ form{display:flex;gap:8px;padding:10px 12px;border-top:1px solid var(--border);b
 textarea{flex:1;resize:none;max-height:140px;border:1px solid var(--border);background:var(--bg);color:var(--text);border-radius:14px;padding:10px 14px;font:inherit}
 #send{background:var(--accent);color:#fff;border:0;border-radius:14px;padding:0 18px;font-weight:600}
 #send:disabled{opacity:.5}
+#attach{background:none;border:1px solid var(--border);color:var(--text);border-radius:14px;padding:0 12px;font-size:18px}
+#imgmode{background:none;border:1px solid var(--border);color:var(--text);border-radius:14px;padding:0 12px;font-size:18px}
+#imgmode.on{background:var(--accent);border-color:var(--accent)}
+.gen{display:block;max-width:100%;width:360px;border-radius:12px;margin:6px 0}
+.acts{display:flex;gap:8px;margin-top:4px}
+.acts button{background:none;border:1px solid var(--border);color:var(--text);border-radius:10px;padding:5px 12px;font-size:13px}
+#previews{display:flex;gap:8px;padding:8px 12px 0;background:var(--panel);border-top:1px solid var(--border)}
+#previews[hidden]{display:none}
+.pv{position:relative}
+.pv img{width:56px;height:56px;object-fit:cover;border-radius:10px;border:1px solid var(--border)}
+.pv button{position:absolute;top:-6px;inset-inline-end:-6px;width:20px;height:20px;border-radius:50%;border:0;background:#000b;color:#fff;font-size:11px;line-height:1;padding:0}
+#ierr{padding:0 12px;min-height:0;font-size:13px;background:var(--panel)}
+#ierr:empty{display:none}
+.thumbs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+.thumbs img{width:72px;height:72px;object-fit:cover;border-radius:10px}
 #scrim{display:none}
 @media (max-width:760px){
   header{display:flex}

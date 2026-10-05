@@ -38,7 +38,12 @@
   <main>
     <header><button class="ghost" id="menu" aria-label="القائمة">☰</button><b>Chat AI OM</b></header>
     <div id="chat"></div>
+    <div id="previews" hidden></div>
+    <div id="ierr" class="err" role="status"></div>
     <form id="f">
+      <input type="file" id="file" accept="image/*" multiple hidden>
+      <button type="button" id="imgmode" aria-pressed="false" aria-label="وضع إنشاء الصور" title="إنشاء/تعديل صورة">🎨</button>
+      <button type="button" id="attach" aria-label="إرفاق صورة" title="إرفاق صورة">📎</button>
       <textarea id="in" rows="1" placeholder="اكتب رسالتك..."></textarea>
       <button id="send" type="submit">إرسال</button>
     </form>
